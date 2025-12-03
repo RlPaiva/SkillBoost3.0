@@ -1,0 +1,12 @@
+
+# macOS
+.DS_Store
+
+# build / archives
+*.zip
+
+# node
+node_modules/
+
+dir*/dist
+.env

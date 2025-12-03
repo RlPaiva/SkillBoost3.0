@@ -1,0 +1,13 @@
+services:
+- type: web
+name: skillboost-backend
+env: node
+plan: free
+repo: https://github.com/seu-usuario/seu-repo-backend
+buildCommand: npm ci && npm run build
+startCommand: npm run start
+envVars:
+- key: SUPABASE_URL
+value: https://seu-project-ref.supabase.co
+- key: SUPABASE_SERVICE_ROLE
+value: $SUPABASE_SERVICE_ROLE
